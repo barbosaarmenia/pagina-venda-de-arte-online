@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1500px;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/imgs/AdobeStock_423103257_Preview.jpeg);
+    background-attachment: fixed;
+    height: 300px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #b7c89e;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn {
+    border: 2px solid #b7c89e;
+    padding: 10px;
+    border-radius: 15px
+}
+
+#inscreva-se-btn:hover {
+    background-color: #808c6f;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 15px;
+    font-family: "Poppins", serif;
+}
+
+span {
+    color: #808c6f;
+}
+
+
+img {
+    width: 700px;
+    max-width: 500px;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    flex-flow:  row wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+#app{
+    display: flex;
+    align-items: center;
+    gap: 63px;
+}
+
+#product-image{
+    position: relative;
+    opacity: .3 ;
+}
+
+#product-image:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+h1{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+h4{
+    font-size: 10px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.p2 p{
+    margin-top: 12px;
+    opacity: 0.67;
+}
+
+#product-details button{
+    font-size: 12px;
+    line-height: 16px;
+    background-color:  #E3DB94;
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: 0.5px solid #808c6f;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    color: #808c6f;
+}
+
+#footer_content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem 1.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+ #footer_social_media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+ }
+
+ /* os icones bolinhas */
+ #footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #808c6f;
+    border-radius: 50%;
+    transition: all 0.4s;
+ }
+
+ #footer_social_media .footer-link i {
+    font-size: 1.25rem;
+ }
+
+ #footer_social_media .footer-link:hover {
+    opacity: 0.8;
+ }
+
+ #instagram {
+    background: linear-gradient(#8d6969, #ac8798, #c7b397);
+ }
+
+ #facebook {
+    background-color: #699ccc;
+ }
+
+ #whatsapp {
+    background-color: #639174;
+ }
+
+ .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.30rem;
+    list-style: none;
+ }
+
+ .footer-list .footer-link {
+    color: #808c6f;
+    transition: all 0.4s;
+ }
+
+ .footer-list .footer-link:hover {
+    color: #c7b397;
+ }
+
+
+@media screen and (max-width:760px) {
+
+    header {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+    }
+    h2 {
+    font-size: 30px;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    input {
+        align-self: center;
+    }
+    img {
+        display: none;
+    }
+    ul {
+        align-items: center;
+    }
+
+
+    #app{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
